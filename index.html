@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejecutor de JavaScript</title>
+</head>
+<body>
+  <h1>Ejecutor de JavaScript</h1>
+
+  <textarea id="codigo" rows="10" cols="80"></textarea>
+  <button onclick="ejecutar()">Ejecutar</button>
+  <pre id="resultado"></pre>
+
+  <script>
+    function ejecutar() {
+      const codigo = document.getElementById('codigo').value;
+      try {
+        const resultado = eval(codigo);
+        document.getElementById('resultado').textContent = resultado;
+      } catch (error) {
+        document.getElementById('resultado').textContent = error.message;
+      }
+    }
+  </script>
+</body>
+</html>
