@@ -1,0 +1,12 @@
+# Example to add into the javascript executer
+
+function log(mensaje) {
+  return a + b
+}
+
+const a = 10;
+const b = 20;
+
+const suma = a + b;
+
+log(suma);
